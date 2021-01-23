@@ -18,6 +18,30 @@ class ArrayOfHash
     puts result ? 'Pass' : 'Fail'
   end
 
+  def addPercnt?( )
+    @@students.each do |student|
+      per = student[:marks] * 100 / 100
+      student[:percentage] = per
+    end
+  end
+
+  def prime?(num)
+    number = 2
+    count = 1
+    while number < num
+      j = 2
+      while j <= number
+        break if number%j == 0
+        j += 1
+      end
+      if (j == number and number%10 != 7)
+        puts number
+        count += 1
+      end
+      number += 1
+    end
+  end
+
   def grade?(name)
     @@students.each do |student|
       if(student[:name] == name and student[:marks] > 80)
@@ -39,3 +63,6 @@ student_hash.add_student(name: "test2", roll_no: 3, marks: 90)
 student_hash.list_students
 student_hash.result?('test')
 student_hash.grade?('test')
+student_hash.addPercnt?()
+student_hash.list_students
+student_hash.prime?(30)
