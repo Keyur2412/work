@@ -39,5 +39,3 @@ student_hash.add_student(name: "test2", roll_no: 3, marks: 90)
 student_hash.list_students
 student_hash.result?('test')
 student_hash.grade?('test')
-hsh = Hash.new( "test" )
-puts hsh[0]
