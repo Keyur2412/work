@@ -3,7 +3,7 @@ class Polygon
     @width  = w
     @length = l
   end
-  attr_reader :length, :width
+  attr_reader :l, :w
   def area
     puts "Area of #{self.class} is #{calculate_area}"
   end
