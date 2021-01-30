@@ -16,13 +16,15 @@ end
 multiply = Proc.new {|n| puts n*2}
 proc_que(multiply)
 
-def lambda_que(multiply)
+def lambda_que(lambda_que)
+  arr = [3,4,5]
   puts "Before lambda"
-  [3, 4, 5].map{|n| n=multiply.call(n)}
+  arr.map{|n| n=lambda_que.call(n)}
+  print arr
   puts "After lambda"
 end
 result = []
 lambda_que = ->(n){return n*2}
-  lambda_que(multiply)
+  lambda_que(lambda_que)
 
 

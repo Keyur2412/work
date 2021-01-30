@@ -5,3 +5,4 @@ def multiply_lambda(lambda_que)
 end
 lambda_que = ->(n,a){n*a}
 multiply_lambda(lambda_que)
+

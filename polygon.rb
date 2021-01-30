@@ -37,3 +37,4 @@ square.area
 
 triange = Triangle.new(4, 5)
 triange.area
+
